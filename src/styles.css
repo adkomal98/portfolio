@@ -185,10 +185,18 @@ md-focus-ring { --md-focus-ring-shape: 28px; }
 .portfolio-count { font: 500 13px var(--md-ref-typeface-plain); letter-spacing: .08em; text-transform: uppercase; color: var(--cv); white-space: nowrap; padding-top: 8px; }
 
 .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
-.portfolio-card { position: relative; border-radius: 28px; padding: 28px; min-height: 260px; display: flex; flex-direction: column; justify-content: space-between; text-decoration: none; overflow: hidden; outline: none; }
-.portfolio-card.slide-img { padding: 0; }
-.portfolio-card-title { font: 400 22px/1.3 var(--md-ref-typeface-brand); margin-bottom: 10px; }
-.card-neutral { background: #f0f0f0; color: #1a1a1a; padding: 28px; }
+.portfolio-card { position: relative; border-radius: 20px; text-decoration: none; overflow: hidden; outline: none; display: flex; flex-direction: column; background: #f5f5f5; transition: box-shadow 0.25s ease; }
+.portfolio-card:hover { box-shadow: 0 4px 24px rgba(0,0,0,0.1); }
+.portfolio-card-thumb { width: 100%; aspect-ratio: 16/10; object-fit: cover; display: block; }
+.portfolio-card-body { padding: 20px; display: flex; flex-direction: column; flex: 1; justify-content: space-between; }
+.portfolio-card-title { font: 500 17px/1.35 var(--md-ref-typeface-brand); margin-bottom: 6px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.portfolio-card-body .body { font-size: 13px; line-height: 1.5; color: var(--cv); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 12px; }
+.portfolio-card-body .slide-tag { margin-bottom: 10px; }
+.portfolio-card-body .slide-go { margin-top: auto; }
+.portfolio-card-accent { width: 100%; aspect-ratio: 16/10; display: flex; align-items: center; justify-content: center; font: 500 14px/1 var(--md-ref-typeface-plain); letter-spacing: .05em; text-transform: uppercase; color: #fff; }
+.accent-primary { background: #1a1a1a; }
+.accent-secondary { background: #4a4a4a; }
+.accent-tertiary { background: #6a6a6a; }
 
 @media (max-width: 760px) {
   .topbar nav md-text-button { display: none; }

@@ -2,7 +2,7 @@ import { profile, portfolio } from './data.js';
 
 const Icon = ({ name, slot }) => <md-icon slot={slot}>{name}</md-icon>;
 
-
+const accents = ['accent-primary', 'accent-secondary', 'accent-tertiary'];
 
 export default function PortfolioPage() {
   return (
@@ -43,39 +43,23 @@ export default function PortfolioPage() {
                 const linkProps = item.url
                   ? { href: item.url, target: '_blank', rel: 'noopener noreferrer' }
                   : {};
-                const hasImage = !!item.image;
                 return (
-                  <Tag
-                    className={`portfolio-card ${hasImage ? 'slide-img' : 'card-neutral'}`}
-                    key={item.title}
-                    {...linkProps}
-                    style={hasImage ? { backgroundImage: `url(${item.image})` } : undefined}
-                  >
+                  <Tag className="portfolio-card" key={item.title} {...linkProps}>
                     <md-ripple />
-                    <md-focus-ring />
-                    {hasImage ? (
-                      <div className="slide-overlay">
-                        <div>
-                          <span className="slide-tag">{item.type}</span>
-                          <h3 className="portfolio-card-title">{item.title}</h3>
-                          <p className="body">{item.desc}</p>
-                        </div>
-                        {item.url && (
-                          <span className="slide-go">View work <Icon name="arrow_outward" /></span>
-                        )}
-                      </div>
-                    ) : (
-                      <>
-                        <div>
-                          <span className="slide-tag">{item.type}</span>
-                          <h3 className="portfolio-card-title">{item.title}</h3>
-                          <p className="body">{item.desc}</p>
-                        </div>
-                        {item.url && (
-                          <span className="slide-go">View work <Icon name="arrow_outward" /></span>
-                        )}
-                      </>
+                    <md-focus-ring style={{ '--md-focus-ring-shape': '20px' }} />
+                    {item.image && (
+                      <img className="portfolio-card-thumb" src={item.image} alt={item.title} loading="lazy" />
                     )}
+                    <div className="portfolio-card-body">
+                      <div>
+                        <span className="slide-tag">{item.type}</span>
+                        <h3 className="portfolio-card-title">{item.title}</h3>
+                        <p className="body">{item.desc}</p>
+                      </div>
+                      {item.url && (
+                        <span className="slide-go">View work <Icon name="arrow_outward" /></span>
+                      )}
+                    </div>
                   </Tag>
                 );
               })}
