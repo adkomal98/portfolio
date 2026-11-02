@@ -171,9 +171,9 @@ export const portfolio = [
     brand: 'NAREDCO',
     desc: 'Social media content and real estate industry features.',
     items: [
-      { type: 'Social Media', title: 'Social campaign — Post 1', desc: 'Multi-platform content on Instagram, LinkedIn and X.', url: 'https://www.instagram.com/p/DWZM5Y_k79x/' },
-      { type: 'Social Media', title: 'Social campaign — Post 2', desc: 'Multi-platform content on Instagram, LinkedIn and X.', url: 'https://www.instagram.com/p/DV0yKm2Ewn-/' },
-      { type: 'Social Media', title: 'Social campaign — Reel', desc: 'Video content on Instagram, LinkedIn and Facebook.', url: 'https://www.instagram.com/reel/DVfrAKEEeIN/' },
+      { type: 'Social Media', title: 'Social campaign — Post 1', desc: 'Multi-platform content on Instagram, LinkedIn and X.', url: 'https://www.instagram.com/p/DWZM5Y_k79x/', image: '/work/naredco-1.png' },
+      { type: 'Social Media', title: 'Social campaign — Post 2', desc: 'Multi-platform content on Instagram, LinkedIn and X.', url: 'https://www.instagram.com/p/DV0yKm2Ewn-/', image: '/work/naredco-2.png' },
+      { type: 'Social Media', title: 'Social campaign — Reel', desc: 'Video content on Instagram, LinkedIn and Facebook.', url: 'https://www.instagram.com/reel/DVfrAKEEeIN/', image: '/work/naredco-3.png' },
       { type: 'Feature', title: 'Gulf war impact on real estate', desc: 'Real estate feeling the Gulf war impact.', url: 'https://www.fortuneindia.com/amp/story/economy/real-estate-sector-beginning-to-feel-the-impact-of-gulf-war/131397', image: '/work/naredco-feature.jpg' },
     ],
   },
