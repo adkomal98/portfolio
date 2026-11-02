@@ -164,7 +164,7 @@ export const portfolio = [
       { type: 'Feature Article', title: 'Founder story — CNBCTV18', desc: 'How UClean\'s founder built a laundry startup.', url: 'https://www.cnbctv18.com/startup/ucleans-arunabh-sinha-on-how-he-hit-on-the-idea-of-a-laundry-startup-growth-plans-and-his-biggest-competitor-4612631.htm', image: '/work/uclean-1.jpg' },
       { type: 'Feature Article', title: 'Founder story — The Better India', desc: 'The founders behind UClean laundromat.', url: 'https://thebetterindia.com/323269/arunabh-sinha-gunjan-taneja-started-uclean-laundromat-iron-dhobi-washing-service/', image: '/work/uclean-2.jpg' },
       { type: 'News Feature', title: 'Drone delivery — Skye Air', desc: 'The future of drone delivery in urban India.', url: 'https://www.businesstoday.in/technology/news/story/from-sky-to-doorstep-discussing-the-future-of-drone-delivery-in-urban-india-with-skye-air-ceo-ankit-kumar-432833-2024-06-11', image: '/work/uclean-3.jpg' },
-      { type: 'News Feature', title: 'Skye Air traffic management', desc: 'India\'s first traffic management for drones.', url: 'https://yourstory.com/2023/02/gurugram-startup-skye-air-india-first-traffic-management-system-drones' },
+      { type: 'News Feature', title: 'Skye Air traffic management', desc: 'India\'s first traffic management for drones.', url: 'https://yourstory.com/2023/02/gurugram-startup-skye-air-india-first-traffic-management-system-drones', image: '/work/uclean-4.avif' },
     ],
   },
   {
