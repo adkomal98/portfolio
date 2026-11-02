@@ -65,7 +65,6 @@ export const portfolio = [
       { type: 'META Static', title: 'Fundraising static — 6', image: '/work/unicef-static-6.jpeg', static: true },
       { type: 'META Static', title: 'Fundraising static — 7', image: '/work/unicef-static-7.jpeg', static: true },
       { type: 'META Static', title: 'Fundraising static — 8', image: '/work/unicef-static-8.jpeg', static: true },
-      { type: 'META Static', title: 'Fundraising static — 9', image: '/work/unicef-static-9.jpeg', static: true },
     ],
   },
   {
