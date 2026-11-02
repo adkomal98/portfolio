@@ -57,10 +57,12 @@ export const portfolio = [
     desc: 'Digital fundraising and donor engagement campaigns.',
     items: [
       { type: 'META Ad', title: 'Fundraising campaign creative — Ad 1', desc: 'Copy for META ad creatives supporting fundraising and donor engagement.', url: 'https://drive.google.com/file/d/1PXb2FgtNU9bJxFJpdo00DlM1V2nBNHLX/view?usp=sharing', image: '/work/unicef-1.jpg' },
-      { type: 'META Static', title: 'Slide to Donate — Mobile mockup', image: '/work/unicef-static-1.jpg', static: true },
-      { type: 'META Static', title: 'New Year giving campaign', image: '/work/unicef-static-2.jpg', static: true },
-      { type: 'META Static', title: 'Donor testimonial — Monthly giving', image: '/work/unicef-static-3.jpg', static: true },
-      { type: 'META Static', title: 'Slide to Donate — Reminder', image: '/work/unicef-static-4.jpg', static: true },
+      { type: 'META Static', title: 'Fundraising static — 1', image: '/work/unicef-static-1.jpeg', static: true },
+      { type: 'META Static', title: 'Fundraising static — 2', image: '/work/unicef-static-2.jpeg', static: true },
+      { type: 'META Static', title: 'Fundraising static — 3', image: '/work/unicef-static-3.jpeg', static: true },
+      { type: 'META Static', title: 'Fundraising static — 4', image: '/work/unicef-static-4.jpeg', static: true },
+      { type: 'META Static', title: 'Fundraising static — 5', image: '/work/unicef-static-5.jpeg', static: true },
+      { type: 'META Static', title: 'Fundraising static — 6', image: '/work/unicef-static-6.jpeg', static: true },
     ],
   },
   {
