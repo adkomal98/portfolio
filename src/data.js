@@ -31,8 +31,8 @@ export const services = [
 export const work = [
   { tag: 'META Ad', title: 'UNICEF India — Fundraising campaign', desc: 'Copy for META ad creatives supporting UNICEF India fundraising and donor engagement.', url: 'https://drive.google.com/file/d/1PXb2FgtNU9bJxFJpdo00DlM1V2nBNHLX/view?usp=sharing', image: '/work/unicef-1.jpg' },
   { tag: 'Social', title: 'BMGF — Twitter content', desc: 'Social posts for the Gates Foundation India handle on public health topics.', url: 'https://x.com/GatesIndia/status/1500109020061143040', image: '/work/bmgf-1.jpg' },
-  { tag: 'LinkedIn', title: 'Sagacious IP — Thought leadership', desc: 'LinkedIn content positioning Sagacious IP in intellectual property services.', url: 'https://lnkd.in/p/dq4-wPnz' },
-  { tag: 'LinkedIn', title: 'Hero Electric — Executive comms', desc: 'Ghostwritten LinkedIn posts on EV policy, partnerships and industry vision.', url: 'https://www.linkedin.com/posts/nmunjal_battrixx-partners-with-hero-electric-launches-activity-7001100388443541504-3KLw' },
+  { tag: 'LinkedIn', title: 'Sagacious IP — Thought leadership', desc: 'LinkedIn content positioning Sagacious IP in intellectual property services.', url: 'https://lnkd.in/p/dq4-wPnz', image: '/work/sagacious_ip_though_leadership.png' },
+  { tag: 'LinkedIn', title: 'Hero Electric — Executive comms', desc: 'Ghostwritten LinkedIn posts on EV policy, partnerships and industry vision.', url: 'https://www.linkedin.com/posts/nmunjal_battrixx-partners-with-hero-electric-launches-activity-7001100388443541504-3KLw', image: '/work/hero_electric.jpeg' },
   { tag: 'LinkedIn', title: 'NDA — Legal insights', desc: 'LinkedIn content on media, entertainment and regulatory developments.', url: 'https://www.linkedin.com/posts/nishith-desai-associates_mediaandentertainment-entertainmentindustry-activity-7061996177902247936-wX8k' },
 ];
 
@@ -57,8 +57,8 @@ export const portfolio = [
     desc: 'Digital fundraising and donor engagement campaigns.',
     items: [
       { type: 'META Ad', title: 'Fundraising campaign creative — Ad 1', desc: 'Copy for META ad creatives supporting fundraising and donor engagement.', url: 'https://drive.google.com/file/d/1PXb2FgtNU9bJxFJpdo00DlM1V2nBNHLX/view?usp=sharing', image: '/work/unicef-1.jpg' },
-      { type: 'META Ad', title: 'Fundraising campaign creative — Ad 2', desc: 'Variant ad copy targeting new donor segments.' },
-      { type: 'META Ad', title: 'Fundraising campaign creative — Ad 3', desc: 'Variant ad copy reinforcing donation impact.' },
+      { type: 'META Ad', title: 'Fundraising campaign creative — Ad 2', desc: 'Variant ad copy targeting new donor segments.', image: '/work/unicef-2.jpg' },
+      { type: 'META Ad', title: 'Fundraising campaign creative — Ad 3', desc: 'Variant ad copy reinforcing donation impact.', image: '/work/unicef-3.jpg' },
     ],
   },
   {
@@ -74,17 +74,17 @@ export const portfolio = [
     brand: 'Sagacious IP',
     desc: 'Thought leadership and brand positioning on LinkedIn.',
     items: [
-      { type: 'LinkedIn', title: 'Thought leadership — IP services', desc: 'LinkedIn content on intellectual property services.', url: 'https://lnkd.in/p/dq4-wPnz' },
-      { type: 'LinkedIn', title: 'Industry insights post', desc: 'Post showcasing sector expertise.', url: 'https://lnkd.in/p/dzyq5thh' },
+      { type: 'LinkedIn', title: 'Thought leadership — IP services', desc: 'LinkedIn content on intellectual property services.', url: 'https://lnkd.in/p/dq4-wPnz', image: '/work/sagacious_ip_though_leadership.png' },
+      { type: 'LinkedIn', title: 'Industry insights post', desc: 'Post showcasing sector expertise.', url: 'https://lnkd.in/p/dzyq5thh', image: '/work/sagacious-2.jpeg' },
     ],
   },
   {
     brand: 'Hero Electric',
     desc: 'Executive communications and EV industry thought leadership.',
     items: [
-      { type: 'LinkedIn', title: 'Partnership announcement — Battrixx', desc: 'Post on Battrixx partnership and EV battery launches.', url: 'https://www.linkedin.com/posts/nmunjal_battrixx-partners-with-hero-electric-launches-activity-7001100388443541504-3KLw' },
-      { type: 'LinkedIn', title: 'EV policy update — Haryana', desc: 'Post on Haryana EV policy notification.', url: 'https://www.linkedin.com/posts/nmunjal_haryana-shares-notification-on-ev-policy-activity-7001469993456427008-ZcL9' },
-      { type: 'LinkedIn', title: 'India EV potential', desc: 'Post positioning India as a global EV leader.', url: 'https://www.linkedin.com/posts/nmunjal_india-has-the-potential-to-become-a-world-activity-7003225903216377856-nMZC' },
+      { type: 'LinkedIn', title: 'Partnership announcement — Battrixx', desc: 'Post on Battrixx partnership and EV battery launches.', url: 'https://www.linkedin.com/posts/nmunjal_battrixx-partners-with-hero-electric-launches-activity-7001100388443541504-3KLw', image: '/work/hero_electric.jpeg' },
+      { type: 'LinkedIn', title: 'EV policy update — Haryana', desc: 'Post on Haryana EV policy notification.', url: 'https://www.linkedin.com/posts/nmunjal_haryana-shares-notification-on-ev-policy-activity-7001469993456427008-ZcL9', image: '/work/hero_electric.jpeg' },
+      { type: 'LinkedIn', title: 'India EV potential', desc: 'Post positioning India as a global EV leader.', url: 'https://www.linkedin.com/posts/nmunjal_india-has-the-potential-to-become-a-world-activity-7003225903216377856-nMZC', image: '/work/hero_electric.jpeg' },
     ],
   },
   {
