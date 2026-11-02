@@ -43,6 +43,13 @@ export default function PortfolioPage() {
                 const linkProps = item.url
                   ? { href: item.url, target: '_blank', rel: 'noopener noreferrer' }
                   : {};
+                if (item.static) {
+                  return (
+                    <div className="portfolio-card portfolio-card-static" key={item.title}>
+                      <img className="portfolio-card-static-img" src={item.image} alt={item.title} loading="lazy" />
+                    </div>
+                  );
+                }
                 return (
                   <Tag className="portfolio-card" key={item.title} {...linkProps}>
                     <md-ripple />

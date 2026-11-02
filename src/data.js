@@ -57,10 +57,10 @@ export const portfolio = [
     desc: 'Digital fundraising and donor engagement campaigns.',
     items: [
       { type: 'META Ad', title: 'Fundraising campaign creative — Ad 1', desc: 'Copy for META ad creatives supporting fundraising and donor engagement.', url: 'https://drive.google.com/file/d/1PXb2FgtNU9bJxFJpdo00DlM1V2nBNHLX/view?usp=sharing', image: '/work/unicef-1.jpg' },
-      { type: 'META Static', title: 'Slide to Donate — Mobile mockup', desc: 'Phone lock-screen creative driving monthly donations.', image: '/work/unicef-static-1.jpg' },
-      { type: 'META Static', title: 'New Year giving campaign', desc: 'Seasonal fundraising static for donor re-engagement.', image: '/work/unicef-static-2.jpg' },
-      { type: 'META Static', title: 'Donor testimonial — Monthly giving', desc: 'Social proof creative featuring a monthly donor.', image: '/work/unicef-static-3.jpg' },
-      { type: 'META Static', title: 'Slide to Donate — Reminder', desc: 'Lock-screen reminder creative for recurring donations.', image: '/work/unicef-static-4.jpg' },
+      { type: 'META Static', title: 'Slide to Donate — Mobile mockup', image: '/work/unicef-static-1.jpg', static: true },
+      { type: 'META Static', title: 'New Year giving campaign', image: '/work/unicef-static-2.jpg', static: true },
+      { type: 'META Static', title: 'Donor testimonial — Monthly giving', image: '/work/unicef-static-3.jpg', static: true },
+      { type: 'META Static', title: 'Slide to Donate — Reminder', image: '/work/unicef-static-4.jpg', static: true },
     ],
   },
   {
