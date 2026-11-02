@@ -63,16 +63,16 @@ md-assist-chip {
   --md-assist-chip-outline-color: #d4d4d4;
 }
 .wrap { max-width: 1040px; margin: 0 auto; padding-left: 24px; padding-right: 24px; }
-.section { padding-top: 88px; padding-bottom: 8px; }
+.section { padding-top: 56px; padding-bottom: 8px; }
 .muted { color: var(--cv); }
 .row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
 
 /* M3 type scale */
 .display { font: 400 clamp(40px, 7vw, 64px)/1.1 var(--md-ref-typeface-brand); letter-spacing: -.01em; max-width: 14em; }
-.headline { font: 400 clamp(28px, 4vw, 36px)/1.25 var(--md-ref-typeface-brand); margin: 8px 0 28px; }
+.headline { font: 400 clamp(28px, 4vw, 36px)/1.25 var(--md-ref-typeface-brand); margin: 8px 0 20px; }
 .title { font: 500 18px/1.4 var(--md-ref-typeface-brand); margin-bottom: 6px; }
 .body { font: 400 16px/1.6 var(--md-ref-typeface-plain); }
-.lead { font: 400 20px/1.6 var(--md-ref-typeface-plain); color: var(--cv); max-width: 34em; margin: 24px 0 32px; }
+.lead { font: 400 20px/1.6 var(--md-ref-typeface-plain); color: var(--cv); max-width: 34em; margin: 16px 0 24px; }
 .label { font: 500 13px/1 var(--md-ref-typeface-plain); letter-spacing: .1em; text-transform: uppercase; color: #555; }
 
 /* Top app bar */
@@ -81,8 +81,8 @@ md-assist-chip {
 .topbar nav { display: flex; gap: 4px; align-items: center; }
 .brand { font: 500 22px var(--md-ref-typeface-brand); text-decoration: none; }
 
-.hero { padding-top: 96px; padding-bottom: 72px; }
-.hero .label { margin-bottom: 20px; display: block; }
+.hero { padding-top: 64px; padding-bottom: 40px; }
+.hero .label { margin-bottom: 16px; display: block; }
 
 /* Proof */
 .proof { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; padding-bottom: 24px; }
@@ -148,7 +148,7 @@ md-focus-ring { --md-focus-ring-shape: 28px; }
 .role .body { font-size: 15px; }
 
 /* Contact */
-.contact { margin-top: 96px; background: #1a1a1a; color: #fafafa; border-radius: 28px; padding: 72px 24px; text-align: center; }
+.contact { margin-top: 56px; background: #1a1a1a; color: #fafafa; border-radius: 28px; padding: 56px 24px; text-align: center; }
 .contact .headline { margin: 0 auto 12px; max-width: 14em; }
 .contact .body { margin-bottom: 28px; }
 .contact md-filled-button {
@@ -206,8 +206,8 @@ md-focus-ring { --md-focus-ring-shape: 28px; }
   .avatar { width: 160px; height: 160px; font-size: 56px; }
   .services { grid-template-columns: 1fr; }
   .role { grid-template-columns: 1fr; gap: 4px; }
-  .section { padding-top: 64px; }
-  .hero { padding-top: 56px; }
+  .section { padding-top: 40px; }
+  .hero { padding-top: 40px; padding-bottom: 24px; }
   .portfolio-grid { grid-template-columns: 1fr; }
   .portfolio-section-head { flex-direction: column; gap: 4px; }
 }

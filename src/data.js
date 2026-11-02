@@ -30,7 +30,7 @@ export const services = [
 
 export const work = [
   { tag: 'META Ad', title: 'UNICEF India — Fundraising campaign', desc: 'Copy for META ad creatives supporting UNICEF India fundraising and donor engagement.', url: 'https://drive.google.com/file/d/1PXb2FgtNU9bJxFJpdo00DlM1V2nBNHLX/view?usp=sharing', image: '/work/unicef-1.jpg' },
-  { tag: 'Social', title: 'BMGF — Twitter content', desc: 'Social posts for the Gates Foundation India handle on public health topics.', url: 'https://x.com/GatesIndia/status/1500109020061143040', image: '/work/bmgf-1.jpg' },
+  { tag: 'Twitter', title: 'BMGF — Development sector engagement', desc: 'Post highlighting development initiatives for the Gates Foundation India.', url: 'https://x.com/GatesIndia/status/1492345258239475714', image: '/work/bmgf-2.jpg' },
   { tag: 'LinkedIn', title: 'Sagacious IP — Thought leadership', desc: 'LinkedIn content positioning Sagacious IP in intellectual property services.', url: 'https://lnkd.in/p/dq4-wPnz', image: '/work/sagacious_ip_though_leadership.png' },
   { tag: 'LinkedIn', title: 'Hero Electric — Executive comms', desc: 'Ghostwritten LinkedIn posts on EV policy, partnerships and industry vision.', url: 'https://www.linkedin.com/posts/nmunjal_battrixx-partners-with-hero-electric-launches-activity-7001100388443541504-3KLw', image: '/work/hero_electric.jpeg' },
   { tag: 'LinkedIn', title: 'NDA — Legal insights', desc: 'LinkedIn content on media, entertainment and regulatory developments.', url: 'https://www.linkedin.com/posts/nishith-desai-associates_mediaandentertainment-entertainmentindustry-activity-7061996177902247936-wX8k', image: '/work/nishith_desai-1.jpeg' },
@@ -108,7 +108,7 @@ export const portfolio = [
       { type: 'Feature Article', title: 'Employee-centric workplaces', desc: 'How employee-centric workplaces define the future of work.', url: 'https://hr.economictimes.indiatimes.com/news/workplace-4-0/employee-engagement/how-employee-centric-workplace-will-define-the-future-of-work/95391050', image: '/work/amdocs-1.jpg' },
       { type: 'Feature Article', title: 'OTT streaming evolution', desc: 'How OTT platforms evolve through a streaming slowdown.', url: 'https://www.financialexpress.com/business/brandwagon-streaming-slowdown-how-otts-are-expected-to-go-through-an-evolution-2776183/', image: '/work/amdocs-2.jpg' },
       { type: 'Feature Article', title: 'Paradox of choices', desc: 'Are too many choices a good thing for consumers?', url: 'https://archive.adgully.com/paradox-of-choices-are-too-many-choices-a-good-thing-129349.html', image: '/work/amdocs-3.jpg' },
-      { type: 'Feature Article', title: 'Green telecom networks', desc: 'Building sustainable telecom operations.', url: 'https://cxotoday.com/corner-office/building-green-telecom-networks-sustainable-operations-can-we-achieve-both/' },
+      { type: 'Feature Article', title: 'Green telecom networks', desc: 'Building sustainable telecom operations.', url: 'https://cxotoday.com/corner-office/building-green-telecom-networks-sustainable-operations-can-we-achieve-both/', image: '/work/amdocs-4.jpg' },
     ],
   },
   {
