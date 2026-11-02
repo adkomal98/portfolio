@@ -33,7 +33,7 @@ export const work = [
   { tag: 'Social', title: 'BMGF — Twitter content', desc: 'Social posts for the Gates Foundation India handle on public health topics.', url: 'https://x.com/GatesIndia/status/1500109020061143040', image: '/work/bmgf-1.jpg' },
   { tag: 'LinkedIn', title: 'Sagacious IP — Thought leadership', desc: 'LinkedIn content positioning Sagacious IP in intellectual property services.', url: 'https://lnkd.in/p/dq4-wPnz', image: '/work/sagacious_ip_though_leadership.png' },
   { tag: 'LinkedIn', title: 'Hero Electric — Executive comms', desc: 'Ghostwritten LinkedIn posts on EV policy, partnerships and industry vision.', url: 'https://www.linkedin.com/posts/nmunjal_battrixx-partners-with-hero-electric-launches-activity-7001100388443541504-3KLw', image: '/work/hero_electric.jpeg' },
-  { tag: 'LinkedIn', title: 'NDA — Legal insights', desc: 'LinkedIn content on media, entertainment and regulatory developments.', url: 'https://www.linkedin.com/posts/nishith-desai-associates_mediaandentertainment-entertainmentindustry-activity-7061996177902247936-wX8k' },
+  { tag: 'LinkedIn', title: 'NDA — Legal insights', desc: 'LinkedIn content on media, entertainment and regulatory developments.', url: 'https://www.linkedin.com/posts/nishith-desai-associates_mediaandentertainment-entertainmentindustry-activity-7061996177902247936-wX8k', image: '/work/nishith_desai-1.jpeg' },
 ];
 
 export const experience = [
@@ -83,16 +83,16 @@ export const portfolio = [
     desc: 'Executive communications and EV industry thought leadership.',
     items: [
       { type: 'LinkedIn', title: 'Partnership announcement — Battrixx', desc: 'Post on Battrixx partnership and EV battery launches.', url: 'https://www.linkedin.com/posts/nmunjal_battrixx-partners-with-hero-electric-launches-activity-7001100388443541504-3KLw', image: '/work/hero_electric.jpeg' },
-      { type: 'LinkedIn', title: 'EV policy update — Haryana', desc: 'Post on Haryana EV policy notification.', url: 'https://www.linkedin.com/posts/nmunjal_haryana-shares-notification-on-ev-policy-activity-7001469993456427008-ZcL9', image: '/work/hero_electric.jpeg' },
-      { type: 'LinkedIn', title: 'India EV potential', desc: 'Post positioning India as a global EV leader.', url: 'https://www.linkedin.com/posts/nmunjal_india-has-the-potential-to-become-a-world-activity-7003225903216377856-nMZC', image: '/work/hero_electric.jpeg' },
+      { type: 'LinkedIn', title: 'EV policy update — Haryana', desc: 'Post on Haryana EV policy notification.', url: 'https://www.linkedin.com/posts/nmunjal_haryana-shares-notification-on-ev-policy-activity-7001469993456427008-ZcL9', image: '/work/hero_electric-2.png' },
+      { type: 'LinkedIn', title: 'India EV potential', desc: 'Post positioning India as a global EV leader.', url: 'https://www.linkedin.com/posts/nmunjal_india-has-the-potential-to-become-a-world-activity-7003225903216377856-nMZC', image: '/work/hero_electric-3.png' },
     ],
   },
   {
     brand: 'Nishith Desai Associates',
     desc: 'Legal and regulatory content on LinkedIn.',
     items: [
-      { type: 'LinkedIn', title: 'Media & entertainment insights', desc: 'Content on media and regulatory developments.', url: 'https://www.linkedin.com/posts/nishith-desai-associates_mediaandentertainment-entertainmentindustry-activity-7061996177902247936-wX8k' },
-      { type: 'LinkedIn', title: 'AI regulatory insights', desc: 'Post on AI and regulatory implications.', url: 'https://www.linkedin.com/posts/nishith-desai-associates_ai-artificialintelligence-generativeai-activity-7062299060342300672-HPKF' },
+      { type: 'LinkedIn', title: 'Media & entertainment insights', desc: 'Content on media and regulatory developments.', url: 'https://www.linkedin.com/posts/nishith-desai-associates_mediaandentertainment-entertainmentindustry-activity-7061996177902247936-wX8k', image: '/work/nishith_desai-1.jpeg' },
+      { type: 'LinkedIn', title: 'AI regulatory insights', desc: 'Post on AI and regulatory implications.', url: 'https://www.linkedin.com/posts/nishith-desai-associates_ai-artificialintelligence-generativeai-activity-7062299060342300672-HPKF', image: '/work/nisith_desai-2.jpeg' },
     ],
   },
   {
@@ -175,8 +175,8 @@ export const portfolio = [
     brand: 'Proactive For Her',
     desc: 'SEO health-tech blogs in a doctor\'s voice.',
     items: [
-      { type: 'Blog', title: 'Secrets to ageing gracefully', desc: 'Skincare and ageing, in a doctor\'s voice.', url: 'https://www.proactiveforher.com/blogs/Hair%20and%20Skin%20Care/the-secrets-to-ageing-gracefully/' },
-      { type: 'Blog', title: 'Foods for healthy skin', desc: 'Foods that contribute to healthy skin.', url: 'https://www.proactiveforher.com/blogs/Hair%20and%20Skin%20Care/foods-that-contribute-to-a-healthy-skin/' },
+      { type: 'Blog', title: 'Secrets to ageing gracefully', desc: 'Skincare and ageing, in a doctor\'s voice.', url: 'https://www.proactiveforher.com/blogs/Hair%20and%20Skin%20Care/the-secrets-to-ageing-gracefully/', image: '/work/proactive_her-1.webp' },
+      { type: 'Blog', title: 'Foods for healthy skin', desc: 'Foods that contribute to healthy skin.', url: 'https://www.proactiveforher.com/blogs/Hair%20and%20Skin%20Care/foods-that-contribute-to-a-healthy-skin/', image: '/work/proactive_her-2.png' },
     ],
   },
   {
