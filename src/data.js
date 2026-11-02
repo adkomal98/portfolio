@@ -60,9 +60,11 @@ export const portfolio = [
       { type: 'META Static', title: 'Fundraising static — 1', image: '/work/unicef-static-1.jpeg', static: true },
       { type: 'META Static', title: 'Fundraising static — 2', image: '/work/unicef-static-2.jpeg', static: true },
       { type: 'META Static', title: 'Fundraising static — 3', image: '/work/unicef-static-3.jpeg', static: true },
-      { type: 'META Static', title: 'Fundraising static — 4', image: '/work/unicef-static-4.jpeg', static: true },
+      { type: 'META Static', title: 'Fundraising static — 4', image: '/work/unicef-static-4.png', static: true },
       { type: 'META Static', title: 'Fundraising static — 5', image: '/work/unicef-static-5.jpeg', static: true },
       { type: 'META Static', title: 'Fundraising static — 6', image: '/work/unicef-static-6.jpeg', static: true },
+      { type: 'META Static', title: 'Fundraising static — 7', image: '/work/unicef-static-7.jpeg', static: true },
+      { type: 'META Static', title: 'Fundraising static — 8', image: '/work/unicef-static-8.jpeg', static: true },
     ],
   },
   {
