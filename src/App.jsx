@@ -1,10 +1,25 @@
 import { useEffect, useRef, useState } from 'react';
 import {
-  profile, workedWith, about, languages, services, work, experience, skills,
+  profile, workedWith, about, services, selectedWork, work, experience, skills,
+  education, certification, publications,
 } from './data.js';
 import PortfolioPage from './PortfolioPage.jsx';
 
 const Icon = ({ name, slot }) => <md-icon slot={slot}>{name}</md-icon>;
+
+/* ---------- scroll-reveal observer ---------- */
+function useReveal() {
+  useEffect(() => {
+    const els = document.querySelectorAll('.reveal, .reveal-scale, .stagger');
+    if (!els.length) return;
+    const io = new IntersectionObserver(
+      (entries) => entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } }),
+      { threshold: 0.12 },
+    );
+    els.forEach((el) => io.observe(el));
+    return () => io.disconnect();
+  });
+}
 
 /* ---------- simple path-based router ---------- */
 function useRoute() {
@@ -35,7 +50,8 @@ function TopBar() {
           <md-text-button href="#work">Work</md-text-button>
           <md-text-button onClick={(e) => { e.preventDefault(); navigate('/portfolio'); }}>Full Portfolio</md-text-button>
           <md-text-button href="#experience">Experience</md-text-button>
-          <md-filled-tonal-button href="#contact">Contact</md-filled-tonal-button>
+          <md-filled-tonal-button href="#contact" class="hide-mobile">Contact</md-filled-tonal-button>
+          <md-filled-tonal-button class="show-mobile" onClick={(e) => { e.preventDefault(); navigate('/portfolio'); }}>Full Portfolio</md-filled-tonal-button>
         </nav>
       </div>
     </header>
@@ -45,14 +61,21 @@ function TopBar() {
 function Hero() {
   return (
     <section className="hero wrap" id="top">
-      <p className="label">{profile.role} · {profile.city}</p>
-      <h1 className="display">{profile.headline}</h1>
-      <p className="lead">{profile.intro}</p>
-      <div className="row">
-        <md-filled-button href="#work" trailing-icon>
-          See my work<Icon name="arrow_downward" slot="icon" />
-        </md-filled-button>
-        <md-filled-tonal-button href="#contact">Get in touch</md-filled-tonal-button>
+      <div className="hero-grid">
+        <div className="hero-text">
+          <p className="label">{profile.role} · {profile.tagline} · {profile.city}</p>
+          <h1 className="display">{profile.headline}</h1>
+          <p className="lead">{profile.intro}</p>
+          <div className="row">
+            <md-filled-button href="#work" trailing-icon>
+              See my work<Icon name="arrow_downward" slot="icon" />
+            </md-filled-button>
+            <md-filled-tonal-button href="#contact">Get in touch</md-filled-tonal-button>
+          </div>
+        </div>
+        <div className="hero-photo">
+          <img src={profile.photo} alt={profile.name} />
+        </div>
       </div>
     </section>
   );
@@ -60,7 +83,7 @@ function Hero() {
 
 function Proof() {
   return (
-    <section className="proof wrap" aria-label="Worked with">
+    <section className="proof wrap reveal" aria-label="Worked with">
       <span className="label">Worked with</span>
       {workedWith.map((n) => <span className="pill" key={n}>{n}</span>)}
     </section>
@@ -69,15 +92,11 @@ function Proof() {
 
 function About() {
   return (
-    <section className="wrap section about" id="about">
-      <div className="avatar">
-        {profile.photo ? <img src={profile.photo} alt={profile.name} /> : profile.name.split(' ').map((w) => w[0]).join('')}
-      </div>
-      <div>
-        <p className="label">About</p>
-        <h2 className="headline">Clear, on-brand, and built to convert.</h2>
-        {about.map((p) => <p className="body" key={p}>{p}</p>)}
-        <p className="body muted">{languages}</p>
+    <section className="wrap section reveal" id="about">
+      <p className="label">About</p>
+      <h2 className="headline">{about.heading}</h2>
+      <div className="about-text">
+        {about.paragraphs.map((p) => <p className="body" key={p}>{p}</p>)}
       </div>
     </section>
   );
@@ -85,10 +104,10 @@ function About() {
 
 function Services() {
   return (
-    <section className="wrap section">
+    <section className="wrap section reveal" id="services">
       <p className="label">What I do</p>
-      <h2 className="headline">Key services</h2>
-      <div className="services">
+      <h2 className="headline">Services</h2>
+      <div className="services stagger">
         {services.map((s) => (
           <div className="card" key={s.title}>
             <div className="card-header">
@@ -103,7 +122,32 @@ function Services() {
   );
 }
 
-function Work() {
+function CaseStudies() {
+  return (
+    <section className="wrap section reveal">
+      <p className="label">How I work</p>
+      <h2 className="headline">Work in detail</h2>
+      <div className="case-studies stagger">
+        {selectedWork.map((sw) => (
+          <div className="case-study" key={sw.brand}>
+            <div className="case-study-num">{sw.num}</div>
+            <div className="case-study-content">
+              <p className="case-study-tags">{sw.tags}</p>
+              <h3 className="case-study-brand">{sw.brand}</h3>
+              <p className="case-study-summary">{sw.summary}</p>
+              <p className="body muted">{sw.desc}</p>
+              <ul className="case-study-bullets">
+                {sw.bullets.map((b) => <li key={b}>{b}</li>)}
+              </ul>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function WorkCarousel() {
   const track = useRef(null);
   const [edge, setEdge] = useState({ start: true, end: false });
 
@@ -127,10 +171,8 @@ function Work() {
     t.scrollBy({ left: dir * (card.offsetWidth + 16), behavior: 'smooth' });
   };
 
-  const tones = ['primary', 'secondary', 'tertiary'];
-
   return (
-    <section className="wrap section" id="work">
+    <section className="wrap section reveal" id="work">
       <div className="work-head">
         <div>
           <p className="label">Portfolio</p>
@@ -147,13 +189,13 @@ function Work() {
       </div>
 
       <div className="track" ref={track} onScroll={update}>
-        {work.map((w, i) => {
+        {work.map((w) => {
           const Tag = w.url ? 'a' : 'div';
           const props = w.url ? { href: w.url, target: '_blank', rel: 'noopener noreferrer' } : {};
           const hasImage = !!w.image;
           return (
             <Tag
-              className={`slide ${hasImage ? 'slide-img' : `tone-${tones[i % 3]}`}`}
+              className={`slide ${hasImage ? 'slide-img' : 'tone-primary'}`}
               key={w.title}
               {...props}
               style={hasImage ? { backgroundImage: `url(${w.image})` } : undefined}
@@ -195,7 +237,7 @@ function Work() {
 
 function Experience() {
   return (
-    <section className="wrap section" id="experience">
+    <section className="wrap section reveal" id="experience">
       <p className="label">Experience</p>
       <h2 className="headline">Where I've worked</h2>
       <div className="exp">
@@ -219,12 +261,42 @@ function Experience() {
   );
 }
 
+function Education() {
+  return (
+    <section className="wrap section reveal" id="education">
+      <div className="edu-grid">
+        <div>
+          <p className="label">Education</p>
+          <h2 className="headline">Academic background</h2>
+          <ul className="edu-list">
+            {education.map((e) => <li key={e}>{e}</li>)}
+          </ul>
+        </div>
+        <div>
+          <p className="label">Certification</p>
+          <h2 className="headline">Professional development</h2>
+          <ul className="edu-list">
+            {certification.map((c) => <li key={c}>{c}</li>)}
+          </ul>
+        </div>
+        <div>
+          <p className="label">Publications</p>
+          <h2 className="headline">Books</h2>
+          <ul className="edu-list">
+            {publications.map((p) => <li key={p}>{p}</li>)}
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Contact() {
   return (
-    <section className="wrap" id="contact">
+    <section className="wrap reveal-scale" id="contact">
       <div className="contact">
-        <h2 className="headline">Have a project in mind?</h2>
-        <p className="body">Let's talk about what your brand needs to say.</p>
+        <h2 className="headline">Let's work together.</h2>
+        <p className="body">Have a project, a campaign, or a brief that needs the right words? I'd love to hear from you.</p>
         <md-filled-button href={`mailto:${profile.email}`} trailing-icon>
           Email me<Icon name="mail" slot="icon" />
         </md-filled-button>
@@ -236,7 +308,7 @@ function Contact() {
 function Footer() {
   return (
     <footer className="wrap footer">
-      <span>© {new Date().getFullYear()} {profile.name}</span>
+      <span>&copy; {new Date().getFullYear()} {profile.name}</span>
       <span>
         <md-text-button href={`mailto:${profile.email}`}>
           <Icon name="mail" slot="icon" />Email
@@ -250,6 +322,7 @@ function Footer() {
 }
 
 function HomePage() {
+  useReveal();
   return (
     <>
       <TopBar />
@@ -258,8 +331,10 @@ function HomePage() {
         <Proof />
         <About />
         <Services />
-        <Work />
+        <WorkCarousel />
+        <CaseStudies />
         <Experience />
+        <Education />
         <Contact />
       </main>
       <Footer />
